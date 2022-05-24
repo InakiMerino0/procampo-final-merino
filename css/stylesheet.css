@@ -32,6 +32,11 @@ header{
     list-style: none;
     padding: 0 20px;
 }
+.cover{
+    height: 90vh;
+    background-image: url(../recursos/logoFondo.png);
+    color: white;
+}
 .article__grid{
     display: grid;
     grid-template-areas: "uno cuatro"
@@ -84,13 +89,13 @@ button:hover{
 .section__integrante1{
     grid-area: uno;
 }
-.section__integrnate1img{
+.section__integrante1img{
     grid-area: dos;
 }
 .section__integrante2{
     grid-area: tres;
 }
-.sectino__integrante2img{
+.section__integrante2img{
     grid-area: cuatro;
 }
 .section__integrante3{
@@ -105,48 +110,15 @@ button:hover{
 .section__integrante4img{
     grid-area: ocho;
 }
-.servicios{
-    display: grid;
-    grid-template-areas: "uno dos tres"
-                        "cuatro cinco seis";
-    row-gap: 100px;
-    column-gap: 100px;
-}
-.servicios__tarjeta{
-    text-align: center;
-    font-size: small;
-}
-.section__tarjeta{
-    text-align: center;
-    font-size: small;
-}
-.servicios__uno{
-    grid-area: uno;
-}
-.servicios__dos{
-    grid-area: dos;
-}
-.servicios__tres{
-    grid-area: tres;
-}
-.servicios__cuatro{
-    grid-area: cuatro;
-}
-.servicios__cinco{
-    grid-area: cinco;
-}
-.servicios__seis{
-    grid-area: seis;
-}
-.servicios__tarjeta:hover{
-    transform: scale(1.1);
-    transition: 0.3s;
-}
 .section__tarjeta{
     font-size: 1rem;
 }
 .section__list{
     list-style-type: none;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 .section__title{
     font-size: 4rem;
