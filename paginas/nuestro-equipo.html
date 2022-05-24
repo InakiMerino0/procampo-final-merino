@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestro equipo</title>
     <link rel="shortcut icon" href="../recursos/favi16.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/stylesheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
@@ -46,33 +47,34 @@
     </header>
     <main> 
         <main> 
+            <h1 class="section__title">Nuestro Equipo</h1>
             <section class="section__grid"> 
-                <div class="section__integrante section__integrante1">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="section__integrante1">
                     <h2>Fernando Merino</h2>
-                    <p>CEO. Productor y vendedor de pautas poublicitarias.</p>                   
+                    <p>CEO. Productor y vendedor de pautas publicitarias.</p>                   
                 </div>
-                <div class="integrante__1img">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="integrante__1img">
                     <img class="section__img" src="../recursos/seo.png" alt="SEO">
                 </div>
-                <div class="section__integrante section__integrante2">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="section__integrante2">
                     <h2>Juan Astrolopites</h2>
                     <p>Community Manager. Experto en Google Analytics y marketing digital.</p>
                 </div>
-                <div class="section__integrante section__integrante2img">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="section__integrante2img">
                     <img class="section__img" src="../recursos/cm.png" alt="Community Manager">
                 </div>
-                <div class="section__integrante section__integrante3">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="section__integrante3">
                     <h2>Leo Messi</h2>
                     <p>Content Creator. Editor profesional de video y especialista en After Effects.</p>
                 </div>
-                <div class="section__integrnate3img">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="section__integrnate3img">
                     <img class="section__img" src="../recursos/cc.png" alt="Content Creator">
                 </div>
-                <div class="section__integrante section__integrante4">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="section__integrante4">
                     <h2>Pablo Ortega</h2>
                     <p>Stream Director. Director de camaras y tecnico de transmisiones en vivo.</p>
                 </div>
-                <div class="section__integrante4img">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="section__integrante4img">
                     <img class="section__img" src="../recursos/ddc.png" alt="Stream Director">
                 </div>
             </section> 
@@ -81,9 +83,15 @@
     <footer>
         <div class="footer">
             <div class="footer__redes">
-                <a class="footer__redesItem" href="" href="https://www.facebook.com/tvprocampo/">Facebook</a>
-                <a class="footer__redesItem" href="https://www.youtube.com/channel/UC3t4-2lrJhm8t72euL5yy6Q">YouTube</a>
-                <a class="footer__redesItem" href="https://www.instagram.com/procampotv/">Instagram</a>
+                <a href="https://www.instagram.com/procampotv/">
+                    <img class="footer__redesImg" src="../recursos/instagram.png" alt="Logo instagram">
+                </a>
+                <a href="https://www.facebook.com/tvprocampo/">
+                    <img class="footer__redesImg" src="../recursos/facebook.png" alt="Logo facebook">
+                </a>
+                <a href="https://www.youtube.com/channel/UC3t4-2lrJhm8t72euL5yy6Q">
+                    <img class="footer__redesImg" src="../recursos/youtube.png" alt="Logo youtube">
+                </a>
             </div>
             <div>           
                 <nav>
@@ -101,6 +109,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -6,7 +6,6 @@
 main{
     padding: 5px;
 }
-/* header */
 header{
     position: sticky;
     top: 0px;
@@ -33,12 +32,8 @@ header{
     list-style: none;
     padding: 0 20px;
 }
-
-/* Index */
 .article__grid{
     display: grid;
-    grid-template-columns: '1fr';
-    grid-template-rows: '1fr'; 
     grid-template-areas: "uno cuatro"
                         "cinco dos"
                         "tres seis";
@@ -76,24 +71,16 @@ button:hover{
     transform: scale(1.1);
     transition: 0.3s;
 }
-
-/* Nuestro equipo */
-
 .section__grid{
     display: grid;
     grid-template-areas: "uno dos"
                         "cuatro tres"
                         "cinco seis"
                         "ocho siete";
-    grid-template-columns: '1fr 1fr';
-    grid-template-rows: '1fr 1fr';  
     place-content: center;
     column-gap: 100px;
     row-gap: 500px;
-}    
-.section__integrante{
-
-}                 
+}               
 .section__integrante1{
     grid-area: uno;
 }
@@ -118,15 +105,12 @@ button:hover{
 .section__integrante4img{
     grid-area: ocho;
 }
-
-/* nuestros servicios */
-
-/* .servicios{
+.servicios{
     display: grid;
-    grid-template-columns: '1fr 1fr 1fr';
-    gap: 100px;
     grid-template-areas: "uno dos tres"
                         "cuatro cinco seis";
+    row-gap: 100px;
+    column-gap: 100px;
 }
 .servicios__tarjeta{
     text-align: center;
@@ -154,111 +138,116 @@ button:hover{
 .servicios__seis{
     grid-area: seis;
 }
-
-/* Transformaciones */
-
 .servicios__tarjeta:hover{
     transform: scale(1.1);
     transition: 0.3s;
 }
-
-/* programas */
-
-.section__title{
-/*     text-align: center; */
-}
 .section__tarjeta{
-/*     text-align: center; */
-    font-size: small;
+    font-size: 1rem;
 }
 .section__list{
     list-style-type: none;
 }
-
-/* contacto */
-.
 .section__title{
+    font-size: 4rem;
     text-align: center;
 }
-.form{
+.section__subtitle{
+    font-size: 2rem;
     text-align: center;
 }
-
-/* Footer */
-
+.section__form{
+    gap: 30px;
+}
 footer{
     padding: 5px;
     bottom: 0px;
-    background-color: black;
+    background-color: grey;
+    color: white;
 }
 .footer{
-    display: flex;
-    color: white;
-}
-.footer__redes{
-    justify-content: flex-end;
-    align-items: flex-end;
-    list-style: none;
-}
-.footer__redesItem{
-    color: white;
-    text-decoration: none;
-    margin-left: 30px;
+    display: grid;
+    grid-template-areas: "uno dos tres";
 }
 .footer__nav{
-    display: inline;
-    margin: 5px;
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
+    grid-area: uno;
 }
 .footer__navItem{
     color: white;
     text-decoration: none;
 }
 .footer__rights{
-    align-self: flex-end;
+    justify-self: center;
+    align-self: end;
+    grid-area: dos;
+}
+.footer__redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    grid-area: tres;   
+}
+.footer__redesImg{
+    width: 70px;
+}
+.footer__redesImg:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 @media (min-width: 541px) and (max-width: 720px){
-    /* header */
     .header__style{
         display: flex;
         flex-direction: column;
     }
-    /* nuestro equipo */
-    
+    .article__grid{
+        grid-template-areas: "uno"
+                            "cuatro"
+                            "dos"
+                            "cinco"
+                            "tres"
+                            "seis";
+        gap: 50px;
+    }
     .section__integrante{
         font-size: 1rem;
     }
-    .section__grid{grid-template-areas: "uno"
-                                        "dos"
-                                        "tres"
-                                        "cuatro"
-                                        "cinco"
-                                        "seis"
-                                        "siete"
-                                        "ocho";
-    grid-template-columns: '1fr';
-    grid-template-rows: '1fr';
-    gap: 75px;
+    .section__grid{
+        grid-template-areas: "uno"
+                            "dos"
+                            "tres"
+                            "cuatro"
+                            "cinco"
+                            "seis"
+                            "siete"
+                            "ocho";
+        gap: 50px;
     }
     .section__img{
-   /*      width: 500px; */
+        height: 450px;
     }
-    /* nuestros servicios */
     .servicios{
         display: grid;
-        grid-template-columns: '1fr 1fr';
-        grid-template-areas: "uno dos"
-                            "tres cuatro"
-                            "cinco seis";
+        grid-template-areas: "uno"
+                            "dos"
+                            "tres"
+                            "cuatro"
+                            "cinco"
+                            "seis";
     }
-    /* footer */
     .footer{
-        flex-direction: column;
+        display: grid;
+        grid-template-areas: "uno"
+                            "tres"
+                            "dos";
+        gap: 30px;
     }
 }
 @media (min-width: 320px) and (max-width: 540px){
-    /* header */
     .header__style{
         display: flex;
         flex-direction: column;
@@ -267,27 +256,53 @@ footer{
         display: flex;
         flex-direction: column;
     }
-    /* nuestro equipo */
+    .cover__title{
+        font-size: 2rem;
+    }
+    .article__subtitle{
+        font-size: 1.5rem;
+    }
+    .article__text{
+        font-size: 1rem;
+    }
+    .article__grid{
+        grid-template-areas: "uno"
+                            "cuatro"
+                            "dos"
+                            "cinco"
+                            "tres"
+                            "seis";
+        gap: 50px;
+    }
+    .section__title{
+        font-size: 2rem;
+    }
+    .section__subtitle{
+        font-size: 1.5rem;
+    }
     .section__integrante{
         font-size: 1rem;
     }
-    .section__grid{grid-template-areas: "uno"
-                                        "dos"
-                                        "tres"
-                                        "cuatro"
-                                        "cinco"
-                                        "seis"
-                                        "siete"
-                                        "ocho";
-    grid-template-columns: '1fr';
-    grid-template-rows: '1fr';
-    gap: 50px;
+    .section__grid{
+        grid-template-areas: "uno"
+                            "dos"
+                            "tres"
+                            "cuatro"
+                            "cinco"
+                            "seis"
+                            "siete"
+                            "ocho";
+        gap: 50px;
+        place-content: center;
     }
-    /* nuestros servicios */
+    .article__img{
+        width: 100px;
+    }
+    .section__img{
+        height: 250px;
+    }
     .servicios{
         display: grid;
-        grid-template-columns: '1fr';
-        gap: 100px;
         grid-template-areas: "uno"
                             "dos"
                             "tres"
@@ -295,12 +310,11 @@ footer{
                             "cinco"
                             "seis";
     }
-    /* footer */
     .footer{
-        display: flex;
-        flex-direction: column;
-    }
-    .footer__redes{
-        flex-direction: row;
+        display: grid;
+        grid-template-areas: "uno"
+                            "tres"
+                            "dos";
+        gap: 30px;
     }
 }
