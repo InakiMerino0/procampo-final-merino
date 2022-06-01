@@ -56,6 +56,21 @@
   transform: scale(1.1);
   transition: 0.3s; }
 
+.key1-cover {
+  background-image: url("../recursos/portadas/index.png");
+  height: 90vh;
+  color: white; }
+
+.key2-cover {
+  background-image: url("../recursos/portadas/servicios.png");
+  height: 90vh;
+  color: white; }
+
+.key3-cover {
+  background-image: url("../recursos/portadas/equipo.png");
+  height: 90vh;
+  color: white; }
+
 * {
   margin: 0;
   padding: 0;
@@ -63,11 +78,6 @@
 
 body {
   padding: 5px; }
-
-.cover {
-  height: 90vh;
-  background-image: url(../recursos/logoFondo.png);
-  color: white; }
 
 .article__grid {
   display: grid;
@@ -150,43 +160,6 @@ button:hover {
 
 .section__form {
   gap: 30px; }
-
-.footer__style {
-  display: grid;
-  grid-template-areas: "uno dos tres";
-  padding: 5px;
-  bottom: 0px;
-  background-color: grey;
-  color: white; }
-
-.footer__nav {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  grid-area: uno; }
-
-.footer__navItem {
-  color: white;
-  text-decoration: none; }
-
-.footer__rights {
-  justify-self: center;
-  align-self: end;
-  grid-area: dos; }
-
-.footer__redes {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-self: center;
-  grid-area: tres; }
-
-.footer__redesImg {
-  width: 70px; }
-
-.footer__redesImg:hover {
-  transform: scale(1.1);
-  transition: 0.3s; }
 
 @media (min-width: 541px) and (max-width: 720px) {
   .header__style {

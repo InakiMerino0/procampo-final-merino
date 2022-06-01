@@ -1,6 +1,7 @@
 @import '_variables';
 @import '_header';
 @import '_footer';
+@import '_cover';
 *{
     margin: 0;
     padding: 0;
@@ -8,12 +9,6 @@
 }
 body{
     padding: 5px;
-}
-
-.cover{
-    height: 90vh;
-    background-image: url(../recursos/logoFondo.png);
-    color: white;
 }
 .article{
     &__grid {
