@@ -7,9 +7,6 @@
     padding: 0;
     font-family: $font-principal;
 }
-body{
-    padding: 5px;
-}
 .article{
     &__grid {
     display: grid;
@@ -17,15 +14,16 @@ body{
                         "cinco dos"
                         "tres seis";
     place-content: center;
-    row-gap: 400px;
-    column-gap: 200px; 
     }
     &__item{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        width: 450px;
+        place-content: center;
+        height: 102vh;
+        background-color: antiquewhite;
+    }
+    &__img{
+        width: 128px;
     }
     &__itemA {
         grid-area: uno;
@@ -59,7 +57,10 @@ button:hover{
                         "ocho siete";
     place-content: center;
     column-gap: 100px;
-    row-gap: 500px;
+/*     row-gap: 500px; */
+    }
+    &__integrante{
+        height: 90vh;
     }
     &__integrante1 {
         grid-area: uno;

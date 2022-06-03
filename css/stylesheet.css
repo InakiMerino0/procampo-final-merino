@@ -3,11 +3,15 @@
   top: 0px;
   z-index: 1; }
   .header__style {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    display: grid;
+    grid-template-areas: 'uno dos';
+    justify-content: space-between;
     padding: 20px 50px;
     background-color: black; }
+  .header__logo {
+    grid-area: uno; }
+  .header__nav {
+    grid-area: dos; }
   .header__ul {
     display: flex;
     list-style-type: none;
@@ -76,22 +80,20 @@
   padding: 0;
   font-family: "Montserrat"; }
 
-body {
-  padding: 5px; }
-
 .article__grid {
   display: grid;
   grid-template-areas: "uno cuatro" "cinco dos" "tres seis";
-  place-content: center;
-  row-gap: 400px;
-  column-gap: 200px; }
+  place-content: center; }
 
 .article__item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  width: 450px; }
+  place-content: center;
+  height: 102vh;
+  background-color: antiquewhite; }
+
+.article__img {
+  width: 128px; }
 
 .article__itemA {
   grid-area: uno; }
@@ -120,7 +122,10 @@ button:hover {
   grid-template-areas: "uno dos" "cuatro tres" "cinco seis" "ocho siete";
   place-content: center;
   column-gap: 100px;
-  row-gap: 500px; }
+  /*     row-gap: 500px; */ }
+
+.section__integrante {
+  height: 90vh; }
 
 .section__integrante1 {
   grid-area: uno; }
