@@ -1,8 +1,9 @@
 .header{
-    position: sticky;
-    top: 0px;
-    z-index:1;
-    &__style {
+    &__style{
+        position: sticky;
+        top: 0;
+    }
+    &__grid {
         display: grid;
         grid-template-areas: 'uno dos';
         justify-content: space-between;
