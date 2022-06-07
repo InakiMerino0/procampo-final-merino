@@ -176,7 +176,6 @@
         grid-area: ocho;
     }
 }
-
 .programa{
     &__grid{
         display: grid;
@@ -191,6 +190,13 @@
     }
     &__cardStyle{
         width: 25rem;
+    }
+}
+
+.form{
+    &__title{
+        text-align: center;
+        padding: 1rem;
     }
 }
 

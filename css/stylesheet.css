@@ -263,6 +263,10 @@
 .programa__cardStyle {
   width: 25rem; }
 
+.form__title {
+  text-align: center;
+  padding: 1rem; }
+
 @media (min-width: 541px) and (max-width: 720px) {
   .key1-cover {
     background-image: url("../recursos/portadas-tablet/index.jpg");
